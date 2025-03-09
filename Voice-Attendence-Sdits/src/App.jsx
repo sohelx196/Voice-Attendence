@@ -6,12 +6,13 @@ import Header from './component/Header'
 function App() {
 
   return (
-   <div>
-      <Header/>
-      <div className='h-screen w-full flex justify-center items-center flex-col bg-gray-700'>
+<div>
+   <Header/>
+      <div className='bg-gray-50 h-screen w-full flex justify-center items-center flex-col  rounded-3xl'>
          <Outlet/>
       </div>
-   </div>
+</div>
+   
     
   )
 }

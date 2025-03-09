@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    color: gray;
+.active {
+    background-color: salmon;
+    border-radius: 50px;
+    padding: 8px 12px;
+    color: white;
     font-weight: bold;
-    text-decoration: underline;
-    transition: all 1s;
-}
+    transition: all 300ms ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(25, 3, 1, 0.4); 
+  }
+  
