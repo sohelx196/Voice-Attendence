@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
- <div className="  flex p-3 item-center justify-center ">
+ <div className="  flex p-5 item-center justify-center ">
   {/* <div className="">
      <h1 className="text-3xl font-semibold">Go Paperless</h1>
   </div> */}
 
-   <nav className="border p-2 rounded-full">
+   <nav className="border border-black  rounded-full">
       <ul className="flex">
         {/* <li className=""><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink></li> */}
         <li className="m-3"><NavLink to="attendence" className={({ isActive }) => (isActive ? "active" : "")}>Attendence</NavLink></li>
