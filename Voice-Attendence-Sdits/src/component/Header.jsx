@@ -11,11 +11,11 @@ function Header() {
 
     <div className="bg-blue-300">
       <ul className="flex">
-        <li className=""><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink></li>
-        <li className=""><NavLink to="" className={({ isActive }) => (isActive ? "active" : "")}>Attendence</NavLink></li>
-        <li className=""><NavLink to="" className={({ isActive }) => (isActive ? "active" : "")}>New Student</NavLink></li>
-        <li className=""><NavLink to="" className={({ isActive }) => (isActive ? "active" : "")}>Register</NavLink></li>
-        <li className=""><NavLink to="" className={({ isActive }) => (isActive ? "active" : "")}>Admin</NavLink></li>
+        {/* <li className=""><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink></li> */}
+        <li className=""><NavLink to="attendence" className={({ isActive }) => (isActive ? "active" : "")}>Attendence</NavLink></li>
+        {/* <li className=""><NavLink to="" className={({ isActive }) => (isActive ? "active" : "")}>New Student</NavLink></li> */}
+        <li className=""><NavLink to="register" className={({ isActive }) => (isActive ? "active" : "")}>Register</NavLink></li>
+        <li className=""><NavLink to="adminLogin" className={({ isActive }) => (isActive ? "active" : "")}>Admin</NavLink></li>
       </ul>
     </div>
 
@@ -23,4 +23,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header
