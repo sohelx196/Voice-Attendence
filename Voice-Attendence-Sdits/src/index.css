@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 .active{
-    margin-top: 3px;
+    color: gray;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 1s;
 }

@@ -8,7 +8,7 @@ function App() {
   return (
    <div>
       <Header/>
-      <div className='h-full w-full flex justify-center items-center flex-col'>
+      <div className='h-screen w-full flex justify-center items-center flex-col bg-gray-700'>
          <Outlet/>
       </div>
    </div>
