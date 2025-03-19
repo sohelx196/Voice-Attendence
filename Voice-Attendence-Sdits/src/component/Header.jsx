@@ -10,9 +10,8 @@ function Header() {
 
    <nav className="border border-black  rounded-full">
       <ul className="flex">
-        <li className="m-3 googleFont"><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink></li>
+        <li className="m-3 googleFont "><NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>Home</NavLink></li>
         <li className="m-3 googleFont"><NavLink to="attendence" className={({ isActive }) => (isActive ? "active" : "")}>Attendence</NavLink></li>
-        {/* <li className=""><NavLink to="" className={({ isActive }) => (isActive ? "active" : "")}>New Student</NavLink></li> */}
         <li className="m-3 googleFont"><NavLink to="register" className={({ isActive }) => (isActive ? "active" : "")}>Register</NavLink></li>
         <li className="m-3 googleFont"><NavLink to="adminLogin" className={({ isActive }) => (isActive ? "active" : "")}>Admin</NavLink></li>
       </ul>
