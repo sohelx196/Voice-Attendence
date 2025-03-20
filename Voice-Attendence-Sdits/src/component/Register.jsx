@@ -18,7 +18,7 @@ function Register() {
     <div className="relative h-screen w-full flex justify-center items-center bg-gradient-to-br from-slate-300 to-slate-100 rounded-t-3xl">
       
  
-      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md">
+      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
         <h1 className="text-3xl font-semibold text-center mb-6 text-blue-600 googleFont">
           Register New Student
         </h1>
