@@ -15,13 +15,11 @@ function Register() {
 
 
   return (
-    <div className="relative h-screen w-full flex justify-center items-center bg-gradient-to-br from-blue-100 to-blue-300">
-      {/* Background (using gradient and subtle shapes) */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,rgba(255,255,255,0.8),transparent_80%),radial-gradient(ellipse_at_bottom_right,rgba(255,255,255,0.6),transparent_80%)]"></div>
-
-      {/* Registration Form (with improved styling) */}
+    <div className="relative h-screen w-full flex justify-center items-center bg-gradient-to-br from-slate-300 to-slate-100 rounded-t-3xl">
+      
+ 
       <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md">
-        <h1 className="text-3xl font-semibold text-center mb-6 text-blue-600">
+        <h1 className="text-3xl font-semibold text-center mb-6 text-blue-600 googleFont">
           Register New Student
         </h1>
         <div className="space-y-4">
@@ -39,8 +37,8 @@ function Register() {
               <MdKeyboardVoice className="text-4xl" />
             </button>
           </div>
-          <p className="text-center text-sm text-gray-600">
-            {isRecording ? 'Recording...' : 'Click to Record Voice'}
+          <p className="text-center text-sm text-gray-600 googleFont">
+            {isRecording ? 'Recording...' : 'Click to Add Voice'}
           </p>
         </div>
       </div>
