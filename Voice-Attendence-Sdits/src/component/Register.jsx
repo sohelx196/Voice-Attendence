@@ -15,13 +15,19 @@ function Register() {
 
 
   return (
-    <div className="relative h-screen w-full flex justify-center items-center bg-gradient-to-br from-slate-300 to-slate-100 rounded-t-3xl">
+    <div className="justify-around relative h-screen w-full flex  items-center bg-gradient-to-br from-slate-300 to-slate-100 rounded-t-3xl">
       
+      <div className=''> 
+
+       
+         <h1 className=' text-6xl font-normal text-center mb-6 text-slate-400 googleFont '>Register</h1>
+         <h1 className=' text-6xl font-normal text-center mb-6 text-slate-400 googleFont '>New</h1>
+         <h1 className=' text-6xl font-normal text-center mb-6 text-slate-400 googleFont '>Student</h1>
+        
  
+      </div>
       <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
-        <h1 className="text-3xl font-semibold text-center mb-6 text-blue-600 googleFont">
-          Register New Student
-        </h1>
+
         <div className="space-y-4">
           <div className='flex space-x-4'>
           <Input type="text" placeholder="Student Full Name" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
