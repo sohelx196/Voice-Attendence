@@ -23,9 +23,18 @@ function Register() {
           Register New Student
         </h1>
         <div className="space-y-4">
+          <div className='flex space-x-4'>
           <Input type="text" placeholder="Student Full Name" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
           <Input type="text" placeholder="Student Roll No" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          </div>
+          <div className='flex space-x-4'>
+          <Input id="myCourse" type="text" placeholder="Course" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          <Input type="text" placeholder="Branch" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          </div>
+
+          <div>
           <Input type="email" placeholder="Student Email" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          </div>
 
           <div className="flex justify-center">
             <button
@@ -41,7 +50,14 @@ function Register() {
             {isRecording ? 'Recording...' : 'Click to Add Voice'}
           </p>
         </div>
+
+        <div className="mt-6">
+          <button className="bg-gray-100 border-black googleFont hover:shadow-md hover:shadow-slate-400 hover:transition-all text-black  border focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 sm:min-w-fit md:w-1/3 lg:w-full ">
+            Register
+          </button>
       </div>
+
+</div>
     </div>
   );
 }
