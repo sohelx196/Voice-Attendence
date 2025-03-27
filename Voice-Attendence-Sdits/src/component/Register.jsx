@@ -17,16 +17,13 @@ function Register() {
   return (
     <div className="justify-around relative h-screen w-full flex  items-center bg-gradient-to-br from-slate-300 to-slate-100 rounded-t-3xl">
       
-      <div className=''> 
-
-       
-         <h1 className=' text-6xl font-normal text-center mb-6 text-slate-400 googleFont '>Register</h1>
-         <h1 className=' text-6xl font-normal text-center mb-6 text-slate-400 googleFont '>New</h1>
-         <h1 className=' text-6xl font-normal text-center mb-6 text-slate-400 googleFont '>Student</h1>
-        
- 
+      <div className="hidden md:block"> 
+         <h1 className="sm:text-sm md:text-3xl lg:text-6xl font-normal text-center mb-6 text-slate-400 googleFont">Register</h1>
+         <h1 className="sm:text-sm md:text-3xl lg:text-6xl font-normal text-center mb-6 text-slate-400 googleFont">New</h1>
+         <h1 className="sm:text-sm md:text-3xl lg:text-6xl font-normal text-center mb-6 text-slate-400 googleFont">Student</h1>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
+
+      <div className=" bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
 
         <div className="space-y-4">
           <div className='flex space-x-4'>
@@ -49,15 +46,15 @@ function Register() {
                 isRecording ? 'bg-red-500 text-white' : 'bg-blue-400 text-white'
               } hover:bg-blue-600 transition-colors duration-300`}
             >
-              <MdKeyboardVoice className="text-4xl" />
+              <MdKeyboardVoice className="text-2xl" />
             </button>
           </div>
           <p className="text-center text-sm text-gray-600 googleFont">
-            {isRecording ? 'Recording...' : 'Click to Add Voice'}
+            {isRecording ? 'Say your name' : 'Click to Add Voice'}
           </p>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 text-center">
           <button className="bg-gray-100 border-black googleFont hover:shadow-md hover:shadow-slate-400 hover:transition-all text-black  border focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 sm:min-w-fit md:w-1/3 lg:w-full ">
             Register
           </button>
