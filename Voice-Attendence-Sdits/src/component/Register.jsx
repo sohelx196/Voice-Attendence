@@ -58,7 +58,7 @@ function Register() {
           <button className="bg-gray-100 border-black googleFont hover:shadow-md hover:shadow-slate-400 hover:transition-all text-black  border focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 sm:min-w-fit md:w-1/3 lg:w-full ">
             Register
           </button>
-      </div>
+      </div>              
 
 </div>
     </div>

@@ -20,3 +20,13 @@
   font-weight: 500;
   font-style: normal;
 }
+
+
+@keyframes slowGif {
+  0% { opacity: 1; }
+  100% { opacity: 1; } 
+}
+
+.slow-gif {
+  animation: slowGif 3s steps(5, end) infinite;
+}
