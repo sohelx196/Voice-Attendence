@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Outlet } from 'react-router-dom'; 
+import Header from './component/Header';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <h1 className='text-5xl text-center flex-col '>Helo World</h1>
-    </>
-  )
+    <div>
+      <div className='' >
+          <Header/>
+      </div>
+      <div className='container mx-auto'>
+        <Outlet />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
