@@ -2,6 +2,7 @@ import React from 'react'
 import Input from "./Input";
 import { useState } from 'react';
 import { MdKeyboardVoice } from 'react-icons/md'; // Assuming you're using react-icons
+import Chatbot from './Chatbot';
 
 function Register() {
   const [isRecording, setIsRecording] = useState(false);
@@ -15,6 +16,7 @@ function Register() {
 
 
   return (
+    <>
     <div className="justify-around relative h-screen w-full flex  items-center bg-gradient-to-br from-slate-300 to-slate-100 rounded-t-3xl">
       
       <div className="hidden md:block"> 
@@ -62,6 +64,10 @@ function Register() {
 
 </div>
     </div>
+<div>
+  <Chatbot />
+</div>
+</>
   );
 }
 export default Register;

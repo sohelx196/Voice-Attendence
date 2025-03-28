@@ -1,4 +1,5 @@
 import React from 'react'
+import Chatbot from './Chatbot'
 
 
 function AdminLogin() {
@@ -51,10 +52,10 @@ function AdminLogin() {
     </form>
   </div>
 </div>
+<div>
+  <Chatbot />
 </div>
-
-
-
+</div>
 
   )
 }

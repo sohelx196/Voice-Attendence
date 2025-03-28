@@ -6,7 +6,9 @@ import Header from './component/Header';
 function App() {
   return (
     <div>
-  <Header/>
+      <div className='' >
+          <Header/>
+      </div>
       <div className='container mx-auto'>
         <Outlet />
       </div>

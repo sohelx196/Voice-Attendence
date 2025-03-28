@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { MessageCircle, X } from "lucide-react"; // Icon for chatbot toggle
+import Input from "./Input";
+import { LuSendHorizontal } from "react-icons/lu";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +10,7 @@ const Chatbot = () => {
 
   // Predefined chatbot responses
   const responses = {
+    "hi": "Hello! Whats going on!! How can I help you today?",
     "how to mark attendance": "Just say your name out loud, and the system will record it!",
     "check my attendance": "Please enter your student ID to fetch your attendance record.",
     "hello": "Hey there! How can I help you today?",
@@ -43,34 +46,43 @@ const Chatbot = () => {
 
       {/* Chatbot Popup */}
       {isOpen && (
-        <div className="fixed bottom-16 right-6 w-80 bg-white shadow-lg rounded-lg p-4 border border-gray-300">
-          <h2 className="text-lg font-bold text-center mb-2">AI Chatbot 🤖</h2>
+      <div className="mb-5 fixed bottom-16 right-6 w-80 bg-white shadow-lg rounded-lg p-4 border border-black">
+      <h2 className="text-lg font-bold text-center mb-2">Need any help 🧐 ?</h2>
+    
+      {/* Chat Messages */}
+      <div className="h-48 overflow-y-auto border p-2 mb-2 w-full">
+        {messages.map((msg, index) => (
+          <div key={index} className={`p-2 my-1 ${msg.sender === "user" ? "text-right" : "text-left"}`}>
+         
+            <span className={`googleFont px-3 py-1 rounded-lg inline-block break-words max-w-[75%] ${
+              msg.sender === "user" ? "bg-blue-500 text-white self-end" : "bg-gray-200 text-black self-start"
+            }`}>
+              {msg.text}
+            </span>
 
-          {/* Chat Messages */}
-          <div className="h-48 overflow-y-auto border p-2 mb-2">
-            {messages.map((msg, index) => (
-              <div key={index} className={`p-2 my-1 ${msg.sender === "user" ? "text-right" : "text-left"}`}>
-                <span className={`px-3 py-1 rounded-lg inline-block ${msg.sender === "user" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}>
-                  {msg.text}
-                </span>
-              </div>
-            ))}
           </div>
-
-          {/* Chat Input */}
-          <div className="flex">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              className="border flex-1 px-2 py-1 rounded-l-md"
-              placeholder="Ask me something..."
-            />
-            <button onClick={handleSendMessage} className="bg-blue-500 text-white px-4 py-1 rounded-r-md">
-              Send
-            </button>
-          </div>
-        </div>
+        ))}
+      </div>
+    
+      {/* Chat Input */}
+      <div className="flex">
+        <Input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          className="border flex-1 px-2 py-1 rounded-l-md googleFont"
+          placeholder="Just Ask me! ☺️"
+          onKeyDown={(e) => e.key === "Enter" && handleSendMessage()} // Allows Enter key to send
+        />
+        <button
+          onClick={handleSendMessage}
+          className="rounded-md hover:shadow-md hover:shadow-slate-400 hover:transition-all text-black border px-4 py-1 rounded-r-md"
+        >
+          <LuSendHorizontal size={22} />
+        </button>
+      </div>
+    </div>
+    
       )}
     </>
   );
