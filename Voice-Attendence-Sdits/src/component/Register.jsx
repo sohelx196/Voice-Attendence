@@ -25,7 +25,7 @@ function Register() {
          <h1 className="sm:text-sm md:text-3xl lg:text-6xl font-normal text-center mb-6 text-slate-400 googleFont">Student</h1>
       </div>
 
-      <div className=" bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
+      <div className="googleFont border border-black  bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
 
         <div className="space-y-4">
           <div className='flex space-x-4'>
