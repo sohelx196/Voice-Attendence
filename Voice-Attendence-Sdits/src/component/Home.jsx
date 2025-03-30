@@ -11,8 +11,8 @@ function Home() {
         </div>
 
         <div className="text-center md:text-left mt-8 md:mt-0 md:ml-10">
-          <h1 className="googleFont text-6xl font-extrabold drop-shadow-md animate-fade-in">Welcome! Buddy</h1>
-          <h1 className=" googleFont text-2xl font-semibold mt-3 animate-slide-up">What's going on!</h1>
+          <h1 className="googleFont text-6xl font-extrabold">Welcome! Buddy</h1>
+          <h1 className="googleFont text-2xl font-semibold mt-5">What's going on!</h1>
 
           <button className="font-bold border-black mt-10 px-6 py-3 bg-white text-black text-lg  rounded-lg 
           hover:shadow-md hover:shadow-slate-400 hover:transition-all border focus:ring-1 focus:ring-blue-300 sm:min-w-fit md:w-1/3 lg:w-1/3">

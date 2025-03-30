@@ -25,20 +25,22 @@ function Register() {
          <h1 className="sm:text-sm md:text-3xl lg:text-6xl font-normal text-center mb-6 text-slate-400 googleFont">Student</h1>
       </div>
 
+{/* Main Form Yaha se start hua hai */}
+<form action="#">
       <div className="googleFont border border-black  bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md bg-opacity-60">
 
         <div className="space-y-4">
           <div className='flex space-x-4'>
-          <Input type="text" placeholder="Student Full Name" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
-          <Input type="text" placeholder="Student Roll No" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          <Input type="text" placeholder="Student Full Name" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
+          <Input type="text" placeholder="Student Roll No" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
           </div>
           <div className='flex space-x-4'>
-          <Input id="myCourse" type="text" placeholder="Course" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
-          <Input type="text" placeholder="Branch" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          <Input id="myCourse" type="text" placeholder="Course" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
+          <Input type="text" placeholder="Branch" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
           </div>
 
           <div>
-          <Input type="email" placeholder="Student Email" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          <Input type="email" placeholder="Student Email" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
           </div>
 
           <div className="flex justify-center">
@@ -46,7 +48,7 @@ function Register() {
               onClick={handleVoiceClick}
               className={`p-4 rounded-full ${
                 isRecording ? 'bg-red-500 text-white' : 'bg-blue-400 text-white'
-              } hover:bg-blue-600 transition-colors duration-300`}
+              }  transition-colors duration-300`}
             >
               <MdKeyboardVoice className="text-2xl" />
             </button>
@@ -57,13 +59,16 @@ function Register() {
         </div>
 
         <div className="mt-6 text-center">
-          <button className="bg-gray-100 border-black googleFont hover:shadow-md hover:shadow-slate-400 hover:transition-all text-black  border focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 sm:min-w-fit md:w-1/3 lg:w-full ">
+          <button type='submit' className="bg-gray-100 border-black googleFont hover:shadow-md hover:shadow-slate-400 hover:transition-all text-black  border focus:ring-1 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 sm:min-w-fit md:w-1/3 lg:w-full ">
             Register
           </button>
       </div>              
 
 </div>
-    </div>
+</form>
+
+
+  </div>
 <div>
   <Chatbot />
 </div>

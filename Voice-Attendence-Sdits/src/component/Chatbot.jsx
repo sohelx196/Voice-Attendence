@@ -9,13 +9,23 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
-  // Predefined chatbot responses
+  // Static responses
   const responses = {
-    hi: "Hello! What's going on!! How can I help you today?",
+    "hi": "Hello! What's going on!! How can I help you today?",
     "how to mark attendance": "Just say your name out loud, and the system will record it!",
     "check my attendance": "Please enter your student ID to fetch your attendance record.",
-    hello: "Hey there! How can I help you today?",
-    bye: "Goodbye! Have a great day!",
+    "hello": "Hey there! How can I help you today?",                                                                  
+    "bye": "Goodbye! Have a great day!",
+    "whats your name": "I dont have any specific name, but you can call me Optimus Prime!",
+    "hi optimus prime": "Hello buddy! How can I assist you today?",
+    "hello optimus prime": "Hello buddy! How can I assist you today?",
+    "how are you": "I'm fine 😊 & What about you ?",
+    "what can you do": "I can help you with attendance-related queries and much more!",
+    "thank you": "You're welcome! If you have any more questions, feel free to ask.",
+    "what is attendance": "Attendance is the act of being present at a place, such as a class or meeting.",
+    "how to register": "To register, please fill out the registration form with your details.",
+    "how to use this app": "This app allows you to mark your attendance and check your records easily.",
+    "what is the purpose of this app": "The purpose of this app is to simplify the attendance marking process.",
   };
 
   // Handle user input
@@ -33,7 +43,10 @@ const Chatbot = () => {
       setMessages((prev) => [...prev, botMessage]);
     }, 500);
 
-    setInput("");
+    setInput(""); // Reset input field
+    // setTimeout(() => {
+    //   setInput(""); // Clear input field after a delay
+    // },2000);
   };
 
   return (
@@ -47,8 +60,8 @@ const Chatbot = () => {
           <FaTimes size={22} />
         ) : (
           <>
-            <TbMessageChatbot  size={24} className="mr-2" /> {/* Chatbot icon */}
-            <span className="text-sm font-semibold">Help?</span> {/* Latest message */}
+            <TbMessageChatbot  size={24} className="" />
+            {/* <span className="text-sm font-semibold">Help?</span> */}
           </>
         )}
       </button>
