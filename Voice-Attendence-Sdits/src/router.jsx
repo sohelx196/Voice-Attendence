@@ -1,14 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 
-
-
-
 import App from "./App";
-import Attendence from "./component/Attendence";
+
 import Home from "./component/Home";
 import Register from "./component/Register";
 import AdminLogin from "./component/AdminLogin";
-
+import Leaderboard from "./component/Leaderboard";
 
 export const router = createBrowserRouter([
     {
@@ -24,8 +21,8 @@ export const router = createBrowserRouter([
                 element:<Home/>
             },
             {
-                path: "attendence",
-                element: <Attendence/>
+                path: "leaderboard",
+                element: <Leaderboard/>
             },
             {
                 path: "register",

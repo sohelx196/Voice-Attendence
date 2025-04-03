@@ -39,8 +39,14 @@ function Register() {
           <Input type="text" placeholder="Branch" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
           </div>
 
+<<<<<<< HEAD
           <div>
           <Input type="email" placeholder="Student Email" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" required/>
+=======
+          <div className='flex space-x-4'>
+          <Input type="number" placeholder="Mobile" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+          <Input type="email" placeholder="Student Email" className="border rounded-md p-2 w-full focus:ring focus:ring-blue-200" />
+>>>>>>> 4108721797c3c61a2725a2640efdb54fc4abf87a
           </div>
 
           <div className="flex justify-center">
